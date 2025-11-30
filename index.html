@@ -19,10 +19,12 @@
     body{margin:0;min-height:100vh;background:linear-gradient(135deg,var(--bg-1),var(--bg-2),var(--bg-3));color:#e6eef6;padding:36px;display:flex;justify-content:center}
 
     .wrap{width:100%;max-width:var(--maxw);}
-    header{display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;margin-bottom:40px}
-    .logo{width:64px;height:64px;background:linear-gradient(135deg,#071122,#09202b);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--accent);font-size:18px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
-    h1{margin:0;font-size:22px}
-    p.lead{margin:0;color:var(--muted)}
+     header{display:flex;flex-direction:column;align-items:center;gap:12px;margin-bottom:28px}
+    .logo-box{width:96px;height:96px;border-radius:20px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#0f2a39,#07202a);box-shadow:0 8px 40px rgba(3,18,30,0.6)}
+    .logo-box svg{width:56px;height:56px;filter:drop-shadow(0 6px 18px rgba(35,215,255,0.12))}
+    h1{margin:0;font-size:34px;letter-spacing:1px}
+    p.lead{margin:0;color:var(--muted);font-size:15px}
+    p.sub{margin:6px 0 0;color:var(--muted)}
 
     /* toolbar */
     .toolbar{display:flex;gap:12px;align-items:center;margin:16px 0 8px}
@@ -76,11 +78,14 @@
 <body>
   <div class="wrap">
     <header>
-            <div style="text-align:center; margin-top:10px;"><h1>CIKAL MOTOR KARAWANG</h1><h4>Pilihan Motor Bekas & Terjangkau</h4>
-      
-        
-        <h4><p class="lead">Segala bentuk pembayaran hanya di lakukan di Toko, diluar itu bukan kami</p></h4>
-        <p class="lead">Klik Foto Untuk Melihat Detail Motor.</p>
+          <div class="logo-box" aria-hidden="true">
+        <!-- simple motorcycle SVG logo -->
+        <svg viewBox="0 0 64 64" fill="none" xmlns="baru lagi aja.png"><rect rx="8" width="64" height="64" fill="url(#g)" opacity="0.02"/><path d="M8 44c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M52 44c0-4.418-3.582-8-8-8s-8 3.582-8 8" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 44L20 32h20l6 12" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M34 28h6l6 4" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+
+      <div style="text-align:center">
+        <h1>CIKAL MOTOR — Pilihan Motor Bekas &amp; Terjangkau</h1>
+        <p class="lead">Klik Foto Untuk Melihat Koleksi Motor.</p>
       </div>
     </header>
 
@@ -365,5 +370,6 @@ function validateAndSubmitForm() {
 </script>
 </body>
 </html>
+
 
 
